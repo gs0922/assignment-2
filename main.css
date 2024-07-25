@@ -1,0 +1,144 @@
+@import url('normalize.css');
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #ff7e5f;
+}
+
+aside {
+    background-image: url('../images/cube.jfif');
+    padding: 1em;
+    color: white;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+main img {
+    float: left;
+    margin: 0 4px 4px 0;
+    shape-outside: circle();
+    shape-margin: 2px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vh;
+}
+
+.gallery img {
+    width: 20vh;
+    clip-path: circle();
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+    aside {
+        background-image: url('../images/gandhi-small-bg.png');
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8rem;
+    }
+    aside {
+        background-image: url('../images/gandhi-tiny-bg.jfif');
+    }
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select, form textarea, form button {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Layout Flexbox */
+header, footer, nav, main, aside {
+    padding: 10px;
+}
+
+main {
+    flex: 1;
+}
+
+nav {
+    background-color: #f4f4f4;
+}
+
+aside {
+    background-color: #ddd;
+}
+
+video{
+    width: 30vh;
+}
